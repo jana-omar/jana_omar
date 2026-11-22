@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="السيرة الذاتية الرقمية لجنى عمر سعيد بالحول، طالبة علوم الحاسب وتصميم البرمجيات — البرمجة، تطوير المواقع، وقواعد البيانات." />
+  <meta name="theme-color" content="#000000" />
+  <title>جنى عمر سعيد بالحول | سيرة ذاتية رقمية</title>
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23000'/%3E%3Cpath d='M30 36 L18 50 L30 64' stroke='%235299AB' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M70 36 L82 50 L70 64' stroke='%235299AB' stroke-width='7' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='50' r='4.5' fill='%23175282'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ شريط التنقل ═══════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a class="navbar__logo" href="#home" aria-label="جنى بالحول — الصفحة الرئيسية">
+        <span class="logo-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="logo-text">جنى<span class="logo-dot">.</span>بالحول</span>
+      </a>
+
+      <nav class="navbar__links" id="navMenu" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">نبذة عني</a>
+        <a href="#skills" class="nav-link">المهارات</a>
+        <a href="#projects" class="nav-link">أعمالي</a>
+        <a href="#education" class="nav-link">التعليم</a>
+        <a href="#contact" class="nav-link">تواصل معي</a>
+      </nav>
+
+      <a href="#projects" class="btn btn--primary btn--nav">أعمالي</a>
+
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ 1) الصفحة الرئيسية (Hero) ═══════════ -->
+    <section class="hero" id="home" aria-label="الصفحة الرئيسية">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--dark" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--light" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+
+        <div class="hero__text reveal-load">
+          <span class="hero__badge">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            متاحة للتدريب والمشاريع التقنية
+          </span>
+
+          <h1 class="hero__name">جنى عمر <span class="gradient-text">سعيد بالحول</span></h1>
+          <h2 class="hero__role">طالبة علوم الحاسب <span class="role-sep">|</span> تصميم البرمجيات</h2>
+
+          <p class="hero__tagline">
+            شغوفة بعالم التقنية، أهتم بالبرمجة وتصميم المواقع وقواعد البيانات، وأسعى إلى تطوير مهاراتي وتحويل الأفكار إلى مشاريع رقمية مبتكرة.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary btn--lg">
+              استعرض أعمالي
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 5v14M12 19l-6-6M12 19l6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn--ghost btn--lg">تواصل معي</a>
+          </div>
+
+          <div class="hero__chips" aria-label="التقنيات الأساسية">
+            <span class="chip">Python</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Java</span>
+          </div>
+        </div>
+
+        <!-- العنصر البصري التقني: نافذة كود + دوائر هندسية -->
+        <div class="hero__visual reveal-load" style="--delay: 0.18s" aria-hidden="true">
+          <div class="orbit orbit--1"></div>
+          <div class="orbit orbit--2"></div>
+
+          <div class="code-window">
+            <div class="code-window__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="code-window__title">jana.js</span>
+            </div>
+            <pre class="code-window__body"><code><span class="c-kw">const</span> <span class="c-var">jana</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"جنى عمر سعيد بالحول"</span>,
+  <span class="c-prop">major</span>: <span class="c-str">"علوم الحاسب وتصميم البرمجيات"</span>,
+  <span class="c-prop">skills</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"Java"</span>],
+  <span class="c-prop">passion</span>: <span class="c-str">"بناء تجارب رقمية مبتكرة"</span>,
+  <span class="c-prop">goal</span>: <span class="c-str">"التعلم المستمر ← مشاريع حقيقية"</span>,
+};
+
+<span class="c-kw">function</span> <span class="c-var">build</span>(<span class="c-prop">idea</span>) {
+  <span class="c-kw">return</span> <span class="c-str">`مشروع رقمي من: ${idea}`</span>;
+}
+
+<span class="c-var">build</span>(<span class="c-str">"فكرة"</span>);<span class="caret"></span></code></pre>
+          </div>
+
+          <div class="float-chip float-chip--1">&lt;html&gt;</div>
+          <div class="float-chip float-chip--2">{ }</div>
+          <div class="float-chip float-chip--3">0110</div>
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="انتقل إلى قسم نبذة عني">
+        <span class="scroll-hint__mouse"><span class="scroll-hint__wheel"></span></span>
+        اكتشف المزيد
+      </a>
+    </section>
+
+    <!-- ═══════════ 2) نبذة عني ═══════════ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">01 / نبذة عني</span>
+          <h2 class="section-title" id="about-title">من أنا؟</h2>
+        </div>
+
+        <div class="about-card reveal" style="--delay: 0.1s">
+          <div class="about-card__avatar" aria-hidden="true">جنى</div>
+          <div class="about-card__body">
+            <p class="about-card__text">
+              أنا <strong>جنى عمر</strong>، طالبة في تخصص <strong>علوم الحاسب وتصميم البرمجيات</strong>. أهتم بمجالات البرمجة وتصميم وتطوير المواقع الإلكترونية وقواعد البيانات. أطمح إلى اكتساب المزيد من الخبرات التقنية وتطوير قدراتي من خلال التعلم المستمر وتنفيذ المشاريع العملية.
+            </p>
+            <ul class="about-card__points">
+              <li><span class="point-icon" aria-hidden="true">&lt;/&gt;</span> شغف بالبرمجة وتطوير الويب</li>
+              <li><span class="point-icon" aria-hidden="true">&#9673;</span> اهتمام بقواعد البيانات وهندسة البرمجيات</li>
+              <li><span class="point-icon" aria-hidden="true">&#10140;</span> التعلم المستمر وتنفيذ المشاريع العملية</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 3) المهارات (قابلة للفتح والإغلاق) ═══════════ -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">02 / المهارات</span>
+          <h2 class="section-title" id="skills-title">المهارات</h2>
+          <p class="section-subtitle">اضغط على الزر لعرض أو إخفاء المهارات.</p>
+        </div>
+
+        <button class="skills-toggle reveal" id="skillsToggle" aria-expanded="true" aria-controls="skillsPanel" style="--delay: 0.1s">
+          <span class="skills-toggle__label">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M13 2L4.5 13.5H11L9.5 22L18 10.5H11.5L13 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            إخفاء المهارات
+          </span>
+          <svg class="skills-toggle__chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="skills-collapsible open" id="skillsPanel" role="region" aria-labelledby="skills-title">
+          <div class="skills-collapsible__inner">
+
+            <h3 class="skills-group-title reveal">المهارات التقنية</h3>
+            <div class="skills-grid">
+              <div class="skill-card reveal" style="--delay: 0.05s" tabindex="0">
+                <div class="skill-card__icon skill-card__icon--python" aria-hidden="true">Py</div>
+                <div class="skill-card__info">
+                  <span class="skill-card__name">Python</span>
+                  <span class="skill-card__level">برمجة وتطوير منطقي</span>
+                </div>
+                <span class="skill-card__bar"><span class="skill-card__fill" style="--level: 65%"></span></span>
+              </div>
+
+              <div class="skill-card reveal" style="--delay: 0.12s" tabindex="0">
+                <div class="skill-card__icon skill-card__icon--html" aria-hidden="true">&lt;/&gt;</div>
+                <div class="skill-card__info">
+                  <span class="skill-card__name">HTML</span>
+                  <span class="skill-card__level">بناء هيكلة المواقع</span>
+                </div>
+                <span class="skill-card__bar"><span class="skill-card__fill" style="--level: 75%"></span></span>
+              </div>
+
+              <div class="skill-card reveal" style="--delay: 0.19s" tabindex="0">
+                <div class="skill-card__icon skill-card__icon--java" aria-hidden="true">☕</div>
+                <div class="skill-card__info">
+                  <span class="skill-card__name">Java</span>
+                  <span class="skill-card__level">برمجة كائنية التوجه</span>
+                </div>
+                <span class="skill-card__bar"><span class="skill-card__fill" style="--level: 60%"></span></span>
+              </div>
+
+              <div class="skill-card reveal" style="--delay: 0.26s" tabindex="0">
+                <div class="skill-card__icon skill-card__icon--css" aria-hidden="true">#</div>
+                <div class="skill-card__info">
+                  <span class="skill-card__name">CSS</span>
+                  <span class="skill-card__level">تنسيق وتصميم الواجهات</span>
+                </div>
+                <span class="skill-card__bar"><span class="skill-card__fill" style="--level: 75%"></span></span>
+              </div>
+            </div>
+
+            <h3 class="skills-group-title reveal" style="--delay: 0.1s">المهارات الشخصية واللغوية</h3>
+            <div class="skills-grid skills-grid--soft">
+              <div class="soft-card reveal" style="--delay: 0.15s" tabindex="0">
+                <div class="soft-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18" stroke="currentColor" stroke-width="1.6"/></svg>
+                </div>
+                <div>
+                  <span class="soft-card__name">اللغة الإنجليزية</span>
+                  <span class="soft-card__desc">قراءة المحتوى التقني والتوثيق البرمجي</span>
+                </div>
+              </div>
+
+              <div class="soft-card reveal" style="--delay: 0.22s" tabindex="0">
+                <div class="soft-card__icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M13 2L4.5 13.5H11L9.5 22L18 10.5H11.5L13 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <span class="soft-card__name">التعلم السريع</span>
+                  <span class="soft-card__desc">استيعاب التقنيات الجديدة وتطبيقها عملياً</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 4) الأعمال والمشاريع ═══════════ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">03 / أعمالي</span>
+          <h2 class="section-title" id="projects-title">الأعمال والمشاريع</h2>
+          <p class="section-subtitle">اضغط على أي بطاقة لعرض تفاصيل المشروع.</p>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 5) التعليم ═══════════ -->
+    <section class="section section--alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">04 / التعليم</span>
+          <h2 class="section-title" id="education-title">التعليم</h2>
+        </div>
+
+        <div class="edu-card reveal" style="--delay: 0.1s">
+          <div class="edu-card__icon" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M12 3L2 9l10 6 10-6-10-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="edu-card__body">
+            <div class="edu-card__row">
+              <span class="edu-label">الدرجة العلمية</span>
+              <span class="edu-value">بكالوريوس</span>
+            </div>
+            <div class="edu-card__row">
+              <span class="edu-label">التخصص</span>
+              <span class="edu-value">علوم الحاسب وتصميم البرمجيات</span>
+            </div>
+            <div class="edu-card__row">
+              <span class="edu-label">المستوى الدراسي</span>
+              <span class="edu-value edu-value--badge">السنة الأولى</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ 6) التواصل ═══════════ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">05 / تواصل</span>
+          <h2 class="section-title" id="contact-title">تواصل معي</h2>
+          <p class="section-subtitle">يسعدني تواصلك — أرسل رسالة أو اتصل مباشرة.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card reveal" style="--delay: 0.05s" href="mailto:Jana.omar8321@gmail.com" aria-label="أرسل بريداً إلكترونياً إلى Jana.omar8321@gmail.com">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-card__label">البريد الإلكتروني</span>
+            <span class="contact-card__value" dir="ltr">Jana.omar8321@gmail.com</span>
+          </a>
+
+          <a class="contact-card reveal" style="--delay: 0.15s" href="tel:+966541515696" aria-label="اتصل على الرقم +966 54 151 5696">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="contact-card__label">رقم الهاتف</span>
+            <span class="contact-card__value" dir="ltr">+966 54 151 5696</span>
+          </a>
+
+          <a class="whatsapp-btn reveal" style="--delay: 0.25s" href="https://wa.me/966541515696" target="_blank" rel="noopener noreferrer" aria-label="ابدأ محادثة واتساب مع جنى">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.14 1.6 5.95L2.05 22l4.32-1.13a9.87 9.87 0 0 0 5.67 1.81h.01c5.46 0 9.9-4.45 9.9-9.91A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-2.46.65.66-2.4-.2-.32a8.18 8.18 0 0 1-1.26-4.35c0-4.53 3.69-8.22 8.23-8.22a8.2 8.2 0 0 1 5.82 2.41 8.18 8.18 0 0 1 2.4 5.82c0 4.53-3.69 8.21-8.2 8.21Zm4.5-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.08-.4-.12-.56.13-.17.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23a7.52 7.52 0 0 1-1.39-1.73c-.14-.25 0-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.17 1.75 2.67 4.24 3.74.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.28Z"/></svg>
+            <span class="whatsapp-btn__text">
+              <strong>تواصل عبر واتساب</strong>
+              <small>رد سريع عبر المحادثة المباشرة</small>
+            </span>
+            <svg class="whatsapp-btn__arrow" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ تذييل الصفحة ═══════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__name">جنى عمر سعيد بالحول</span>
+      <span class="footer__copy">© <span id="currentYear"></span> — سيرة ذاتية رقمية، صُنعت بشغف بالتقنية.</span>
+    </div>
+  </footer>
+
+  <!-- ═══════════ زر العودة إلى الأعلى ═══════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة إلى أعلى الصفحة">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- ═══════════ نافذة تفاصيل المشروع (Modal) ═══════════ -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true" hidden>
+    <div class="modal" role="document">
+      <button class="modal__close" id="modalClose" aria-label="إغلاق النافذة">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="modal__tag" id="modalTag">مشروع</span>
+      <h3 class="modal__title" id="modalTitle">اسم المشروع</h3>
+      <p class="modal__desc" id="modalDesc">وصف المشروع</p>
+      <div class="modal__tech" id="modalTech" aria-label="التقنيات المستخدمة"></div>
+      <button class="btn btn--primary modal__btn" id="modalOk">حسناً، فهمت</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
