@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتجات | Final.store — المتجر النهائي</title>
+  <meta name="description" content="تسوق قمصان ومستلزمات مشجعي الأندية السعودية من Final.store — تحقق حسب النادي واطلب عبر واتساب.">
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+
+  <!-- ===== الترويسة المشتركة ===== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Final.store — المتجر النهائي">
+        <img class="brand-logo" src="images/logo.svg" alt="" width="40" height="40">
+        <span class="brand-name">Final<span class="brand-accent">.store</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="فتح أو إغلاق القائمة">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" data-nav="index">الرئيسية</a></li>
+          <li><a class="nav-link" href="products.html" data-nav="products">المنتجات</a></li>
+          <li><a class="nav-link" href="about.html" data-nav="about">عن المتجر</a></li>
+          <li><a class="nav-link" href="contact.html" data-nav="contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== ترويسة الصفحة ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker reveal">تسوق حسب النادي</p>
+        <h1 class="section-title reveal">منتجات المشجعين</h1>
+        <p class="section-sub reveal">تشكيلة قمصان مختارة بعناية لكل مشجع. اختر نادييك المفضل واطلب مباشرة عبر واتساب بدون تسجيل.</p>
+      </div>
+    </section>
+
+    <!-- ===== الفلاتر ===== -->
+    <section class="section section--tight" id="productsSection">
+      <div class="container">
+        <h2 class="visually-hidden">قائمة المنتجات</h2>
+
+        <div class="filters reveal" role="group" aria-label="تصفية المنتجات حسب النادي">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">الكل</button>
+          <button class="filter-btn" type="button" data-filter="hilal" aria-pressed="false">الهلال</button>
+          <button class="filter-btn" type="button" data-filter="ahli" aria-pressed="false">الأهلي</button>
+          <button class="filter-btn" type="button" data-filter="nassr" aria-pressed="false">النصر</button>
+        </div>
+
+        <div class="products-grid" data-products-grid data-variant="detailed"></div>
+
+        <noscript>
+          <p class="section-sub">لعرض المنتجات، يرجى تفعيل JavaScript في المتصفح.</p>
+        </noscript>
+
+        <div class="cta-band reveal mt-3">
+          <h2>لم تجد ما تبحث عنه؟</h2>
+          <p>أرسل لنا استفسارك عبر واتساب وسنساعدك في إيجاد القطعة المناسبة أو طلب تشكيلة جديدة.</p>
+          <a class="btn btn-primary" href="https://wa.me/966530087694" target="_blank" rel="noopener">استفسر عبر واتساب</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== التذييل ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a class="brand" href="index.html" aria-label="Final.store — المتجر النهائي">
+            <img class="brand-logo" src="images/logo.svg" alt="" width="40" height="40">
+            <span class="brand-name">Final<span class="brand-accent">.store</span></span>
+          </a>
+          <p>متجر سعودي من جدة يقدم منتجات مختارة لمشجعي الأندية السعودية بجودة عالية وتجربة طلب سهلة.</p>
+        </div>
+
+        <nav class="footer-col" aria-label="روابط سريعة">
+          <h3>روابط سريعة</h3>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="products.html">المنتجات</a></li>
+            <li><a href="about.html">عن المتجر</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-col">
+          <h3>تواصل معنا</h3>
+          <ul>
+            <li>واتساب: <a href="https://wa.me/966530087694" target="_blank" rel="noopener" dir="ltr">+966 53 008 7694</a></li>
+            <li>الموقع: جدة، السعودية</li>
+            <li>ساعات العمل: يوميًا 9ص — 11م</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Final.store — جميع الحقوق محفوظة.</p>
+        <p>متجر مستقل غير تابع رسميًا لأي نادي؛ جميع المنتجات مخصصة للمشجعين.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
